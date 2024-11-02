@@ -1,103 +1,46 @@
-# name = input("Enter the name: ")
+#Strings are sequence of characters enclosed with quotes . They are immutable ,meaning they cannot be changed once they are initialized
+# common methods:
 
-# #String Slicing
-# string_slicing = name[0:3]
-# print(string_slicing)
-# print('_'*20)
+# 1.len(s): Returns the length of the string.
+s= "Hello World"
+print(len(s))
 
-# #String slicing with the skip value
-# a = "0123456789"
-# b = print(a[1:7:3])
+# 2.lower() Converts all characters to lowercase.
+a = "HELLO AMAN"
+print(a.lower())
 
+# 3.upper() Converts all characters to uppercase.
+b = "hello vivek"
+print(b.upper())
 
-# c = "abcdefghijklmnopqrstuvwxyz"
-# d = print(c[0:9:4])
-# print('_'*20)
+# 4.replace(old,new) Replaces occurrences of a substring.
+c = "aman singh"
+value = c.replace("aman","vivek k ")
+print(value)
 
-# # String access
-# nameshort1 = name[0] #to access the string through the index
-# nameshort2 = name[1] #to access the string through the index
-# nameshort3 = name[-1] #to access the string through the index
-# nameshort4 = name[-2] #to access the string through the index
-# print(nameshort1 ,nameshort2 , nameshort3 , nameshort4)
-# print('_'*20)
-
-
-# #To find the length of the string we use len function
-# length = len(name)
-# print(length)
+f = "aman   singh   vivek   singh"
+value2 = f.replace("   ","")
+print("the value of f is ",value2)
 
 
-##############################################################String Functions############################################################
+# 5.split() Splits the string into a list based on a separator.
+d = "aman_singh_vivek_singh"
+value1 = d.split("_")  #split the string into a list based on a separator 
+print(value1)
 
-#len("string")
-# full_name = "Vivek Singh"
-# Length = len(full_name)
-# print(Length)
+# 6.strip() Removes leading and trailing whitespace.
+e = "      -amansinghviveksingh-    "
+print(e)
+#after applying the strip 
+print(e.strip())
 
+# 7.find() Returns the index of the first occurrence of a substring; returns -1 if not found
+g = "aman singh vivek singh"
+value3 = g.find("vivek")
+value4 = g.find("pritika")
+print(value3,value4)
 
-#.endswith(" ")
-# name = "vivek"
-# print(name.endswith("vk")) 
-# print(name.endswith("vek"))
-
-
-#.startswith(" ")
-# name = "vivek"
-# print(name.startswith("viv"))
-# print(name.startswith("Viv")) # CASE SENSITIVE
-
-#.capitalize("")
-# name = "vivek"
-# print(name.capitalize())
-
-#.title("")
-# name = "vivek singh aman singh"
-# print(name.title())
-
-#.lower()
-# name = "VIVEK"
-# print(name.lower())
-
-#.upper()
-# name = "vivek"
-# print(name.upper())
-
-#.strip()
-# name = "    vivek  "
-# print("my name is",name.strip())
-
-#.split()
-# name = "vivek singh"  # it converts the string into list based on the delimiter 
-# print(name.split())   # by default delimiter is space
-
-#.join()
-# aman = ['vivek','singh']
-# print("_" .join(aman))
-
-#.replace()
-# name = "vivek singh"
-# print(name)
-# print(name.replace("vivek", "Aman"))
-
-#find()
-# name = "vivek"
-# print(name.find("k"))
-
-#isdigit()
-# digit3 = "123455"
-# print(digit3.isdigit())
-# digit1 = str(1234)
-# print(digit1.isdigit())
-
-#isalpha()
-# name = "vivek"
-# print(name.isalpha())
-# digit = "123"
-# print(digit.isalpha())
-
-#isalnum()
-# name = "#"
-# print(name.isalnum())
-# name1 = "vivek123"
-# print(name1.isalnum())
+# 8.join() Joins elements of an iterable into a single string, using the string as a separator.
+h = ['aman','singh','vivek','singh']
+value5 = ' '.join(h)
+print(value5)
