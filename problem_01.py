@@ -1,25 +1,9 @@
-#write a problem to store seven fruits in a list entered by the user
-fruits = []
+#write a program to create a dicitionary of Hindi words with values  as their English translation. Provide user
+# with an option to look it up !
 
-f1 = input("Enter the fruit name: ")
-fruits.append(f1)
+set1 = {"seb":"apple", "kela":"banana","amrudh":"guava"}
 
-f2 = input("Enter the fruit name: ")
-fruits.append(f2)
+word = input("enter the hindi word which you want:")
 
-f3 = input("Enter the fruit name: ")
-fruits.append(f3)
+print(set1[word])
 
-f4 = input("Enter the fruit name: ")
-fruits.append(f4)
-
-f5 = input("Enter the fruit name: ")
-fruits.append(f5)
-
-f6 = input("Enter the fruit name: ")
-fruits.append(f6)
-
-f7 = input("Enter the fruit name: ")
-fruits.append(f7)
-
-print(fruits)
