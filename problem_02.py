@@ -1,25 +1,28 @@
-#write a program to accept marks of 6 students and display them in a sorted manner
+#write a program to input eight numbers from the user and display all the unique values (once)
 
-marks = []
+s = set() #empty set
+n = input("Enter the number:")
+s.add(int(n))
 
-m1 = int(input("Enter the marks of student: "))
-marks.append(m1)
+n = input("Enter the number:")
+s.add(int(n))
 
-m2 = int(input("Enter the marks of student: "))
-marks.append(m2)
+n = input("Enter the number:")
+s.add(int(n))
 
-m3 = int(input("Enter the marks of student: "))
-marks.append(m3)
+n = input("Enter the number:")
+s.add(int(n))
 
-m4 = int(input("Enter the marks of student: "))
-marks.append(m4) 
+n = input("Enter the number:")
+s.add(int(n))
 
-m5 = int(input("Enter the marks of student: "))
-marks.append(m5)
+n = input("Enter the number:")
+s.add(int(n))
 
-m6 = int(input("Enter the marks of student: "))
-marks.append(m6)
+n = input("Enter the number:")
+s.add(int(n))
 
-marks.sort()
- 
-print(marks)
+n = input("Enter the number:")
+s.add(int(n))
+
+print(s)
