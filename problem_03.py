@@ -1,6 +1,6 @@
-#check that a tuple cannot changed in a python
+#Can we have a set with 18(int) and '18' (str) as a value in it?
+s = set()
+s.add(18)
+s.add("18")
 
-tup = (1,2,3,"aman","pikki","kd")
-
-tup[5] = "bu"
-print(tup)
+print(s)
