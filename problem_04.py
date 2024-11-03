@@ -1,4 +1,8 @@
-#write a program to sum a list with 4 numbers
-l1 = [1,2,3,4,5]
+#what will be the length of the following set:
 
-print(sum(l1))
+s= set()
+s.add(20)
+s.add(20.0)
+s.add("20")
+
+print(len(s))
