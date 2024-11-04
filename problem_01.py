@@ -1,9 +1,17 @@
-#write a program to create a dicitionary of Hindi words with values  as their English translation. Provide user
-# with an option to look it up !
+#write a program to find the greatest of four numbers entered by the user . 
 
-set1 = {"seb":"apple", "kela":"banana","amrudh":"guava"}
+a = int(input("Enter the number1:"))
+b = int(input("Enter the number2:"))
+c = int(input("Enter the number3:"))
+d = int(input("Enter the number4:"))
 
-word = input("enter the hindi word which you want:")
+if(a>b and a>c and a>d):
+    print(a)
+elif(b>a and b>c and b>d):
+    print(b)
+elif(c>a and c>b and c>d):
+    print(c)
+else:
+    print(d)
 
-print(set1[word])
 
