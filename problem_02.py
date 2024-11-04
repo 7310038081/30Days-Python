@@ -1,28 +1,15 @@
-#write a program to input eight numbers from the user and display all the unique values (once)
+#write a program to find out whether a student has passed or failed if it requires a total of 40% and atleast 33%in each subject to pass.
+# Assume 3 subjects and take marks as an input from the user.
 
-s = set() #empty set
-n = input("Enter the number:")
-s.add(int(n))
 
-n = input("Enter the number:")
-s.add(int(n))
+marks1 = int(input("Enter the marks:"))
+marks2 = int(input("Enter the marks:"))
+marks3 = int(input("Enter the marks:"))
 
-n = input("Enter the number:")
-s.add(int(n))
+Total_percentage = (100*(marks1+marks2+marks3)/300)
 
-n = input("Enter the number:")
-s.add(int(n))
+if(Total_percentage>=40 and marks1>=33 and marks2>=33 and marks3>=33):
+    print("You are pass",Total_percentage)
 
-n = input("Enter the number:")
-s.add(int(n))
-
-n = input("Enter the number:")
-s.add(int(n))
-
-n = input("Enter the number:")
-s.add(int(n))
-
-n = input("Enter the number:")
-s.add(int(n))
-
-print(s)
+else:
+    print("You Failed!",Total_percentage)
