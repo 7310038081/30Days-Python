@@ -13,3 +13,5 @@ print(aman.values())
 
 aman.update({1:"bu"})
 print(aman)
+
+#######
